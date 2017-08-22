@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="SY" size="1.000000 1.000000" />
+    <ImageTarget name="KY" size="1.000000 1.000000" />
+    <ImageTarget name="MY" size="1.000000 1.000000" />
+    <ImageTarget name="HY2" size="1.000000 1.000000" />
+    <ImageTarget name="HY" size="1.000000 1.000000" />
+    <ImageTarget name="DY" size="1.000000 1.000000" />
+    <ImageTarget name="BY" size="1.000000 1.000000" />
+    <ImageTarget name="SW" size="1.000000 1.000000" />
+    <ImageTarget name="MW" size="1.000000 1.000000" />
+    <ImageTarget name="KW" size="1.000000 1.000000" />
+    <ImageTarget name="HW" size="10.000000 10.000000" />
+    <ImageTarget name="DW" size="1.000000 1.000000" />
+    <ImageTarget name="BW" size="1.000000 1.000000" />
+    <ImageTarget name="K" size="1.000000 1.000000" />
+    <ImageTarget name="S" size="1.000000 1.000000" />
+    <ImageTarget name="M" size="1.000000 1.000000" />
+    <ImageTarget name="H" size="1.000000 1.000000" />
+    <ImageTarget name="D" size="1.000000 1.000000" />
+    <ImageTarget name="B" size="1.000000 1.000000" />
+  </Tracking>
+</QCARConfig>
