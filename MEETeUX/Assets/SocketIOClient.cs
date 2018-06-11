@@ -13,20 +13,22 @@ public class SocketIOClient : MonoBehaviour
 	public Text connectionText;
 	private string status;
 
+	private int width;
+	private int height;
+
 	private byte[] trashData;
 	private byte[] bigTrashData;
 	private int dataSize;
 
-	public Slider dataSlider;
 	public Text dataText;
-	public Toggle bigDataToggle;
 
 	// Use this for initialization
 	void Start () 
 	{
 		loadAndOpenConnection ();
-		dataSlider.onValueChanged.AddListener (updateTrashData);
-		bigDataToggle.onValueChanged.AddListener (invokeSendBigData);
+
+		this.width = Screen.width;
+		this.height = Screen.height;
 
 		this.bigTrashData = new byte[1024 * 1024 * 2];
 	}
@@ -86,9 +88,13 @@ public class SocketIOClient : MonoBehaviour
 		data.id = id;
 		data.color = color;
 
+		data.width = this.width;
+		data.height = this.height;
+
+
 		float frameRate = 1.0f / Time.deltaTime;
 
-		dataText.text = "Sending: " + this.dataSlider.value * frameRate + "KB/s";
+		// dataText.text = "Sending: " + this.dataSlider.value * frameRate + "KB/s";
 
 		data.trash = this.trashData;
 		string stringData = JsonUtility.ToJson (data);

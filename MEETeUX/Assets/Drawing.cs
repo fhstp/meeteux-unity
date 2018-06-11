@@ -10,4 +10,6 @@ public class Drawing : System.Object
 	public string id;
 	public byte[] trash;
 	public string color;
+	public int width;
+	public int height;
 }
